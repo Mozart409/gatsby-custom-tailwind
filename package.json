@@ -1,0 +1,57 @@
+{
+  "name": "gatsby-custom-tailwind",
+  "description": "Custom Tailwind Starter",
+  "version": "0.1.0",
+  "author": "Mozart409",
+  "dependencies": {
+    "gatsby": "2.15.1",
+    "gatsby-plugin-manifest": "2.2.12",
+    "gatsby-plugin-offline": "3.0.0",
+    "gatsby-plugin-postcss": "2.1.5",
+    "gatsby-plugin-purgecss": "4.0.1",
+    "gatsby-plugin-react-helmet": "3.1.5",
+    "graphql": "14.5.4",
+    "prop-types": "15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-helmet": "5.2.1"
+  },
+  "keywords": [
+    "gatsby",
+    "tailwind",
+    "tailwindcss",
+    "purgecss"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "analyze:lint": "eslint --ext .jsx --ext .js .",
+    "analyze:prettier": "prettier --list-different '**/*.{js,css,md,json}'",
+    "analyze": "yarn run analyze:lint && yarn run analyze:prettier",
+    "build": "gatsby build",
+    "develop": "gatsby develop -o",
+    "fix:lint": "eslint --ext .jsx --ext .js . --fix",
+    "fix:prettier": "prettier --write '**/*.{js,css,md,json}'",
+    "fix": "clear && yarn run fix:lint && yarn run fix:prettier",
+    "start": "clear && yarn run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "2.0.0",
+    "@typescript-eslint/parser": "2.0.0",
+    "babel-eslint": "10.0.3",
+    "eslint": "6.3.0",
+    "eslint-config-react-app": "5.0.1",
+    "eslint-plugin-flowtype": "4.2.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.14.3",
+    "eslint-plugin-react-hooks": "2.0.1",
+    "prettier": "1.18.2",
+    "tailwindcss": "1.1.2",
+    "typescript": "3.6.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
