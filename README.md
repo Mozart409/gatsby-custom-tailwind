@@ -1,7 +1,7 @@
 # COMPLETE COPY
 
 "gatsby-tailwind-starter" from
-<strong><a href="https://github.com/taylorbryant/gatsby-starter-tailwind">taylorbryant</a></strong> with slight tweaks
+<strong><a href="https://github.com/taylorbryant/gatsby-starter-tailwind">taylorbryant</a></strong> with tweaks
 
 ## Gatsby Custom Tailwind Starter
 
@@ -22,6 +22,21 @@
   <br />
   <br />
 </div>
+
+## gatsby-config.js (Update required)
+
+``` javascript
+siteMetadata: {
+    title: `Title`,
+    description: `description`,
+    author: `@mozart409`,
+    siteUrl: `https://www.example.com` <--------------
+  },
+```
+
+## Featured Plugins
+
+> Robots.txt, Sitemap.xml and etc.
 
 ## What is Tailwind?
 
