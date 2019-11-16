@@ -33,20 +33,6 @@ function Layout({ children }) {
             </Link>
           </p>
 
-          <p className="text-white">
-            <Link to="/impressum" className="font-bold no-underline text-white">
-              Impressum
-            </Link>
-          </p>
-          <p className="text-white">
-            <Link
-              to="/datenschutz"
-              className="font-bold no-underline text-white"
-            >
-              Datenschutz
-            </Link>
-          </p>
-
           <p>
             <a
               href="https://github.com/mozart409"
