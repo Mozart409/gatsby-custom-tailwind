@@ -29,7 +29,7 @@ function Layout({ children }) {
         <nav className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
           <p className="text-white">
             <Link to="/" className="font-bold no-underline text-white">
-              Created by Amadeus Mader
+              Created by Mozart409
             </Link>
           </p>
 
