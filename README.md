@@ -1,14 +1,14 @@
-# COMPLETE COPY
+# Custom Tailwind Starter
 
-"gatsby-tailwind-starter" from
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/Mozart409/gatsby-custom-tailwind)
+
+inspired by "gatsby-tailwind-starter" from
 <strong><a href="https://github.com/taylorbryant/gatsby-starter-tailwind">taylorbryant</a></strong> with tweaks
 
 ## Gatsby Custom Tailwind Starter
 
 [![license](https://img.shields.io/github/stars/Mozart409/gatsby-custom-tailwind?style=for-the-badge)](#license)
-
 [![forks](https://img.shields.io/github/forks/Mozart409/gatsby-custom-tailwind?style=for-the-badge)](#forks)
-
 [![stars](https://img.shields.io/github/stars/Mozart409/gatsby-custom-tailwind?style=for-the-badge)](#stars)
 
 <div align="center">
@@ -23,9 +23,9 @@
   <br />
 </div>
 
-## gatsby-config.js (Update required)
+## gatsby-config.js
 
-``` javascript
+```javascript
 siteMetadata: {
     title: `Title`,
     description: `description`,
