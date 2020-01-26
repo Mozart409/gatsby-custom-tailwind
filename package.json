@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "Mozart409",
   "dependencies": {
-    "gatsby": "2.15.1",
+    "gatsby": "^2.19.5",
     "gatsby-plugin-manifest": "2.2.12",
     "gatsby-plugin-offline": "3.0.0",
     "gatsby-plugin-postcss": "2.1.5",
