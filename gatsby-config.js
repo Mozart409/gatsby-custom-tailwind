@@ -4,7 +4,7 @@ module.exports = {
     title: `Title`,
     description: `description`,
     author: `@mozart409`,
-    siteUrl: `https://www.example.com`,
+    siteUrl: `https://gct.mozart409.space`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
