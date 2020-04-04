@@ -43,7 +43,7 @@ To remove unused CSS styles <br>
   }
 ```
 
-Automatic prettier all staged files befor you commit
+Automatic prettify all staged files befor you commit.
 
 ## What is Tailwind?
 
@@ -81,10 +81,10 @@ yarn start or npm start
 Each time you build, the cache and public folder will be delete to prevent stale data and files. The production build will be served with zeit/serve server. Alternatively you can build without deleting the cache and public folder.
 
 ```sh
-    "build": "gatsby clean && gatsby build",
-    "build:noclean": "gatsby build",
-    "serve": "serve -l 9000 public",
-    "prod": "yarn build && yarn serve",
+"build": "gatsby clean && gatsby build",
+"build:noclean": "gatsby build",
+"serve": "serve -l 9000 public",
+"prod": "yarn build && yarn serve",
 ```
 
 ## Format and lint
