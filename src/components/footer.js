@@ -18,7 +18,7 @@ export default function footer() {
           <p>
             <a
               href="https://github.com/mozart409"
-              className="text-gray-400 hover:text-gray-500 no-underline "
+              className="text-gray-700 hover:text-gray-500 no-underline "
               target="_blank"
               rel="noopener noreferrer"
             >

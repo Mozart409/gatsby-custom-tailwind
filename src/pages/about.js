@@ -11,7 +11,7 @@ const Hero = () => (
     <h2 className="text-3xl font-bold text-gray-800 leading-8 tracking-tight">
       Lorem Ipsum
     </h2>
-    <p className="mt-1 text-lg text-gray-600 leading-2 text-left">
+    <p className="mt-1 text-lg text-gray-700 leading-2 text-left font-body">
       Voluptate Lorem laborum eiusmod occaecat fugiat exercitation cupidatat
       nulla. Consectetur labore aute irure dolore. Lorem adipisicing excepteur
       mollit nisi non exercitation. Aute quis consequat duis aliquip magna. Et
