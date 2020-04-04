@@ -4,27 +4,18 @@ module.exports = {
     title: `Title`,
     description: `description`,
     author: `@mozart409`,
-    siteUrl: `https://gct.mozart409.space`,
+    siteUrl: `https://www.gct.mozart409.space/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
-    {
-      resolve: "gatsby-plugin-robots-txt",
-      options: {
-        host: "${siteMetadata.siteUrl}",
-        sitemap: "${siteMetadata.siteUrl}/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }],
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
+        name: `gatsby-custom-tailwind`,
+        short_name: `gct`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#4dc0b5`,
+        theme_color: `#000`,
         display: `minimal-ui`,
         icon: `src/images/tailwind-icon.png`,
       },

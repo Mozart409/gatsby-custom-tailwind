@@ -1,7 +1,7 @@
 {
   "name": "gatsby-custom-tailwind",
   "description": "Custom Tailwind Starter",
-  "version": "0.5.0",
+  "version": "0.9.0",
   "author": "Mozart409",
   "dependencies": {
     "@openfonts/open-sans_all": "^1.44.0",
@@ -11,8 +11,6 @@
     "gatsby-plugin-postcss": "2.2.1",
     "gatsby-plugin-purgecss": "5.0.0",
     "gatsby-plugin-react-helmet": "3.2.1",
-    "gatsby-plugin-robots-txt": "^1.5.0",
-    "gatsby-plugin-sitemap": "^2.2.21",
     "graphql": "14.6.0",
     "prop-types": "15.7.2",
     "react": "16.13.1",
@@ -36,12 +34,14 @@
     "analyze:lint": "eslint --ext .jsx --ext .js .",
     "analyze:prettier": "prettier --list-different \"**/*.{js,jsx,json,md}\"",
     "analyze": "yarn run analyze:lint && yarn run analyze:prettier",
-    "build": "gatsby build",
+    "build": "gatsby clean && gatsby build",
+    "build:noclean": "gatsby build",
     "fix:lint": "eslint --ext .jsx --ext .js . --fix",
     "fix:prettier": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "fix": "yarn run fix:lint && yarn run fix:prettier",
     "start": "gatsby develop",
-    "serve": "serve /public 9000",
+    "serve": "serve -l 9000 public",
+    "prod": "yarn build && yarn serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
