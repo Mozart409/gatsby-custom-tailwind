@@ -2,32 +2,40 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-
-import About from "../components/About";
-const avatarAmadeus = require("../images/port.jpg");
+const Hero = () => (
+  <div className="text-center">
+    <h1 className="text-5xl font-extrabold text-indigo-600 leading-9 tracking-tight">
+      About
+    </h1>
+    <br />
+    <h2 className="text-3xl font-bold text-gray-800 leading-8 tracking-tight">
+      Lorem Ipsum
+    </h2>
+    <p className="mt-1 text-lg text-gray-600 leading-2 text-left">
+      Voluptate Lorem laborum eiusmod occaecat fugiat exercitation cupidatat
+      nulla. Consectetur labore aute irure dolore. Lorem adipisicing excepteur
+      mollit nisi non exercitation. Aute quis consequat duis aliquip magna. Et
+      ullamco officia nulla labore exercitation ea officia pariatur
+      excepteur.Veniam officia anim nostrud pariatur sit ullamco non eu. Laboris
+      cupidatat ad velit minim magna velit laboris magna reprehenderit sit
+      proident do consectetur exercitation. Proident ea veniam ad adipisicing
+      quis ut ipsum anim. Ullamco cillum non dolore elit sunt elit. Labore quis
+      laborum cillum quis reprehenderit laborum esse minim elit eu non ea sunt
+      velit. Non incididunt ullamco minim nostrud.Labore et anim labore ut et.
+      Pariatur mollit qui sint eiusmod cupidatat officia veniam aliqua fugiat
+      deserunt commodo ad nisi sit. Ut do irure laborum nisi in culpa ad. Dolore
+      ea aute deserunt nulla labore anim. Aliquip duis excepteur veniam id
+      exercitation anim incididunt elit veniam officia ex aliqua id.
+    </p>
+  </div>
+);
 
 function AboutPage() {
   return (
     <Layout>
-      <SEO
-        title="About"
-        keywords={[`Amadeus`, `IT`, `Spezialist`, `Speaker`, `Mader`]}
-      />
-      <About
-        title="Über mich"
-        imgsrc={avatarAmadeus}
-        tag="Unternehmer, Podcaster, Speaker"
-      >
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </About>
+      <SEO title="About" keywords={[`About`]} />
+
+      <Hero />
     </Layout>
   );
 }

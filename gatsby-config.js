@@ -4,7 +4,7 @@ module.exports = {
     title: `Title`,
     description: `description`,
     author: `@mozart409`,
-    siteUrl: `https://www.example.com`
+    siteUrl: `https://www.example.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,8 +14,8 @@ module.exports = {
       options: {
         host: "${siteMetadata.siteUrl}",
         sitemap: "${siteMetadata.siteUrl}/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }]
-      }
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -26,17 +26,17 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
-      }
+        icon: `src/images/tailwind-icon.png`,
+      },
     },
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
-        purgeOnly: [`src/css/style.css`]
-      }
+        purgeOnly: [`src/css/style.css`],
+      },
     },
-    `gatsby-plugin-offline`
-  ]
+    `gatsby-plugin-offline`,
+  ],
 };

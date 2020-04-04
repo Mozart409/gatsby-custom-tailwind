@@ -1,18 +1,24 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
-
 import Logo from "../images/tailwind-icon.png";
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
+  const NavLinks = [
+    { href: "/", name: "Home" },
+    { href: "/about", name: "About" },
+    { href: "/contact", name: "Contact" },
+  ];
 
   return (
-    <nav className="bg-teal-700">
+    <nav className="bg-white">
       <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
-        <Link to="/" className="flex items-center no-underline text-white">
+        <Link to="/" className="flex items-center no-underline text-black">
           <img src={Logo} alt="Logo" className="w-8" />
-          <span className="font-bold pl-4 text-xl">{siteTitle}</span>
+          <span className="pl-4 text-3xl font-Inter font-extrabold text-black leading-9 tracking-tight">
+            {siteTitle}
+          </span>
         </Link>
 
         <button
@@ -34,27 +40,16 @@ function Header({ siteTitle }) {
             isExpanded ? `block` : `hidden`
           } md:block md:flex md:items-center w-full md:w-auto`}
         >
-          <div className="MenuText">
-            <Link
-              to="/"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
-            >
-              Home
-            </Link>
-
-            <Link
-              to="/about"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
-            >
-              About
-            </Link>
-
-            <Link
-              to="/contact"
-              className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
-            >
-              Contact
-            </Link>
+          <div className="">
+            {NavLinks &&
+              NavLinks.map((node) => (
+                <Link
+                  to={node.href}
+                  className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-black"
+                >
+                  {node.name}
+                </Link>
+              ))}
           </div>
         </div>
       </div>
@@ -63,11 +58,11 @@ function Header({ siteTitle }) {
 }
 
 Header.propTypes = {
-  siteTitle: PropTypes.string
+  siteTitle: PropTypes.string,
 };
 
 Header.defaultProps = {
-  siteTitle: ``
+  siteTitle: ``,
 };
 
 export default Header;

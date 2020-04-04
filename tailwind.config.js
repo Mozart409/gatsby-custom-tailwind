@@ -1,7 +1,12 @@
 // See https://tailwindcss.com/docs/configuration for details
 
 module.exports = {
-  theme: {},
+  theme: {
+    fontFamily: {
+      Inter: ["Inter"],
+      body: ['"Open Sans"'],
+    },
+  },
   variants: {},
-  plugins: []
+  plugins: [require("@tailwindcss/custom-forms")],
 };
