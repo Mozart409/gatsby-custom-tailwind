@@ -1,15 +1,11 @@
 # Custom Tailwind Starter
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/Mozart409/gatsby-custom-tailwind)
-
-inspired by "gatsby-tailwind-starter" from
-<strong><a href="https://github.com/taylorbryant/gatsby-starter-tailwind">taylorbryant</a></strong> with tweaks
-
-## Gatsby Custom Tailwind Starter
-
 [![license](https://img.shields.io/github/stars/Mozart409/gatsby-custom-tailwind?style=for-the-badge)](#license)
 [![forks](https://img.shields.io/github/forks/Mozart409/gatsby-custom-tailwind?style=for-the-badge)](#forks)
 [![stars](https://img.shields.io/github/stars/Mozart409/gatsby-custom-tailwind?style=for-the-badge)](#stars)
+
+## [Demo](https://gct.mozart409.space)
 
 <div align="center">
   <img src="https://image.ibb.co/cJjPN7/gatsby_tailwind.png" alt="Gatsby and Tailwind CSS logos">
@@ -18,25 +14,36 @@ inspired by "gatsby-tailwind-starter" from
 <div align="center">
   <strong>A <a href="https://www.gatsbyjs.org/">Gatsby</a> starter styled using <a href="https://tailwindcss.com/">Tailwind</a>, a utility-first CSS framework.</strong><br />
   Uses <a href="https://www.purgecss.com/">Purgecss</a> to remove unused CSS.<br />
-  Illustrations by <a href="https://undraw.co/">unDraw</a>.
   <br />
   <br />
 </div>
 
-## gatsby-config.js
+## Lighthouse Audit
 
-```javascript
-siteMetadata: {
-    title: `Title`,
-    description: `description`,
-    author: `@mozart409`,
-    siteUrl: `https://www.example.com` <--------------
-  },
+<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586015947/GitHub%20Screenshots/Gatsby-Custom-Tailwind/Lighthouse.png" alt="Lighthouse Audit">
+
+## Features
+
+#### gatsby-plugin-react-helmet
+
+For SEO optimizisation
+
+#### gatsby-plugin-purgecss
+
+To remove unused CSS styles <br>
+<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586015946/GitHub%20Screenshots/Gatsby-Custom-Tailwind/purgecss.png" alt="purgecss" >
+
+#### Husky + pretty-quick
+
+```sh
+ "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
 ```
 
-## Featured Plugins
-
-> Robots.txt, Sitemap.xml and etc.
+Automatic prettier all staged files befor you commit
 
 ## What is Tailwind?
 
@@ -52,6 +59,7 @@ siteMetadata: {
 Install Gatsby CLI:
 
 ```sh
+yarn global add gatsby-cli
 npm i --global gatsby-cli
 ```
 
@@ -61,20 +69,27 @@ Create new Gatsby project using this starter:
 gatsby new my-new-website https://github.com/Mozart409/gatsby-custom-tailwind
 ```
 
-Build stylesheet from Tailwind config and run the project in development mode:
+Change the directory and start the dev server.
 
 ```sh
 cd my-new-website
 yarn start or npm start
 ```
 
+## Build your site
+
+Each time you build, the cache and public folder will be delete to prevent stale data and files. The production build will be served with zeit/serve server. Alternatively you can build without deleting the cache and public folder.
+
+```sh
+    "build": "gatsby clean && gatsby build",
+    "build:noclean": "gatsby build",
+    "serve": "serve -l 9000 public",
+    "prod": "yarn build && yarn serve",
+```
+
 ## Format and lint
 
 - `yarn fix` or `npm run fix` - Run Prettier and ESLint with the `--fix` option
-
-## Build your site
-
-Use `yarn build` or `npm run build` to build your site for production.
 
 ## Resources
 
