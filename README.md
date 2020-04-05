@@ -24,6 +24,14 @@
 
 ## Features
 
+#### Custom Fonts
+
+<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586065286/GitHub%20Screenshots/Gatsby-Custom-Tailwind/gatsby-browser.png" alt="Custom Fonts" style="width:75%">
+
+You can import your npm packaged fonts via the <code>gatsby-browser.js</code>
+
+<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586065544/GitHub%20Screenshots/Gatsby-Custom-Tailwind/tailwind.config.js.png" alt="Tailwind.config.js" style="width:75%">
+
 #### gatsby-plugin-react-helmet
 
 For SEO optimizisation
