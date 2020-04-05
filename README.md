@@ -32,11 +32,11 @@ You can import your npm packaged fonts via the <code>gatsby-browser.js</code>
 
 <img src="https://res.cloudinary.com/gooddeed/image/upload/v1586066043/GitHub%20Screenshots/Gatsby-Custom-Tailwind/Tailwind.config.png" alt="Tailwind.config.js" style="width:33%">
 
-Those fonts can be imported via the tailwind.config.js and used globaly, e.g. <code>className="font-inter"</code> or <code>className="font-body"</code>. You can change the names as you wish. Remeber "Spaces" wont be escpaed, so use "Open Sans" instead.
+Those fonts can be imported via the tailwind.config.js and used globally, e.g. <code>className="font-inter"</code> or <code>className="font-body"</code>. You can change the names as you wish. Remember "Spaces" wont be escaped, so use "Open Sans" instead.
 
 #### gatsby-plugin-react-helmet
 
-For SEO optimizisation
+For SEO optimization
 
 #### gatsby-plugin-purgecss
 
@@ -53,7 +53,7 @@ To remove unused CSS styles <br>
   }
 ```
 
-Automatic prettify all staged files befor you commit.
+Automatic prettify all staged files before you commit.
 
 ## What is Tailwind?
 
@@ -88,7 +88,7 @@ yarn start or npm start
 
 ## Build your site
 
-Each time you build, the cache and public folder will be delete to prevent stale data and files. The production build will be served with zeit/serve server. Alternatively you can build without deleting the cache and public folder.
+Each time you build, the cache and public folder will be deleted to prevent stale data and files. The production build will be served with zeit/serve server. Alternatively you can build without deleting the cache and public folder.
 
 ```sh
 "build": "gatsby clean && gatsby build",
