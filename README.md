@@ -26,11 +26,11 @@
 
 #### Custom Fonts
 
-<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586065286/GitHub%20Screenshots/Gatsby-Custom-Tailwind/gatsby-browser.png" alt="Custom Fonts" style="width:75%">
+<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586065286/GitHub%20Screenshots/Gatsby-Custom-Tailwind/gatsby-browser.png" alt="Custom Fonts" style="width:33%">
 
 You can import your npm packaged fonts via the <code>gatsby-browser.js</code>
 
-<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586066043/GitHub%20Screenshots/Gatsby-Custom-Tailwind/Tailwind.config.png" alt="Tailwind.config.js" style="width:75%">
+<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586066043/GitHub%20Screenshots/Gatsby-Custom-Tailwind/Tailwind.config.png" alt="Tailwind.config.js" style="width:33%">
 
 Those fonts can be imported via the tailwind.config.js and used globaly, e.g. <code>className="font-inter"</code> or <code>className="font-body"</code>. You can change the names as you wish. Remeber "Spaces" wont be escpaed, so use "Open Sans" instead.
 
