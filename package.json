@@ -5,7 +5,7 @@
   "author": "Mozart409",
   "dependencies": {
     "@openfonts/open-sans_all": "^1.44.0",
-    "gatsby": "^2.19.5",
+    "gatsby": "2.20.22",
     "gatsby-plugin-manifest": "2.3.3",
     "gatsby-plugin-offline": "3.1.2",
     "gatsby-plugin-postcss": "2.2.1",
