@@ -9,7 +9,7 @@ export default function footer() {
           <p className="">
             <Link
               to="/"
-              className="no-underline text-gray-400 hover:text-gray-500"
+              className="no-underline text-gray-700 hover:text-gray-500"
             >
               Created by Mozart409
             </Link>
