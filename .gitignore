@@ -13,3 +13,5 @@ yarn.lock
 # deployment-specific configs
 now.json
 package-lock.json
+
+.now
