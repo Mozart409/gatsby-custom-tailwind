@@ -2,16 +2,11 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-const Hero = () => (
-  <div className="text-center">
-    <h1 className="text-5xl font-extrabold text-indigo-600 leading-9 tracking-tight">
-      About
-    </h1>
-    <br />
-    <h2 className="text-3xl font-bold text-gray-800 leading-8 tracking-tight">
-      Lorem Ipsum
-    </h2>
-    <p className="mt-1 text-lg text-gray-700 leading-2 text-left font-body">
+const ProseHero = () => (
+  <div className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+    <h1>About</h1>
+    <h2>Lorem Ipsum</h2>
+    <p>
       Voluptate Lorem laborum eiusmod occaecat fugiat exercitation cupidatat
       nulla. Consectetur labore aute irure dolore. Lorem adipisicing excepteur
       mollit nisi non exercitation. Aute quis consequat duis aliquip magna. Et
@@ -35,7 +30,7 @@ function AboutPage() {
     <Layout>
       <SEO title="About" keywords={[`About`]} />
 
-      <Hero />
+      <ProseHero />
     </Layout>
   );
 }

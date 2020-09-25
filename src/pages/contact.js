@@ -10,53 +10,45 @@ function ContactPage() {
         title="Contact"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
-      <section>
-        <form className="mx-auto md:w-1/2">
-          <label
-            className="block font-bold mb-2 text-xs uppercase"
-            htmlFor="first-name"
-          >
-            First Name
+      <section className="prose lg:prose-lg">
+        <h1>Contact</h1>
+        <form className="mx-auto max-w-screen-sm md:max-w-screen-lg lg:max-w-screen-xl">
+          <label className="block">
+            <span className="text-gray-700">First Name</span>
+            <input
+              className="form-input mt-1 block w-full"
+              id="first-name"
+              type="text"
+              placeholder="Bill"
+            />
           </label>
 
-          <input
-            className="appearance-none block bg-gray-200 mb-6 px-3 py-2 rounded-md text-gray-700 w-full"
-            id="first-name"
-            type="text"
-            placeholder="Bill"
-          />
+          <div className="mt-4">
+            <label className="block" htmlFor="last-name">
+              <span className="text-gray-700">Last Name</span>
+              <input
+                className="form-input mt-1 block w-full"
+                id="last-name"
+                type="text"
+                placeholder="Murray"
+              />
+            </label>
+          </div>
 
-          <label
-            className="block font-bold mb-2 text-xs uppercase"
-            htmlFor="last-name"
-          >
-            Last Name
-          </label>
-
-          <input
-            className="appearance-none block bg-gray-200 mb-6 px-3 py-2 rounded-md text-gray-700 w-full"
-            id="last-name"
-            type="text"
-            placeholder="Murray"
-          />
-
-          <label
-            className="block font-bold mb-2 text-xs uppercase"
-            htmlFor="message"
-          >
-            Message
-          </label>
-
-          <textarea
-            className="appearance-none bg-gray-200 mb-6 px-3 py-2 rounded-md text-gray-700 w-full"
-            id="message"
-            placeholder="Say something..."
-            rows="8"
-          />
-
-          <button className="border-b-4 border-gray-800 hover:border-gray-700 bg-gray-700 hover:bg-gray-600 font-bold px-4 py-2 rounded text-sm text-white">
-            Submit
-          </button>
+          <div className="mt-4">
+            <label className="block" htmlFor="message">
+              <span className="text-gray-700">Message</span>
+              <textarea
+                className="form-textarea w-full"
+                id="message"
+                placeholder="Say something..."
+                rows="8"
+              />
+            </label>
+          </div>
+          <div className="mt-4">
+            <button className="form-input text-gray-700">Submit</button>
+          </div>
         </form>
       </section>
     </Layout>

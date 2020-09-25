@@ -1,7 +1,6 @@
 # Custom Tailwind Starter
 
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/Mozart409/gatsby-custom-tailwind)
-[![license](https://img.shields.io/github/stars/Mozart409/gatsby-custom-tailwind?style=for-the-badge)](#license)
 [![forks](https://img.shields.io/github/forks/Mozart409/gatsby-custom-tailwind?style=for-the-badge)](#forks)
 [![stars](https://img.shields.io/github/stars/Mozart409/gatsby-custom-tailwind?style=for-the-badge)](#stars)
 
@@ -12,8 +11,9 @@
 </div>
 
 <div align="center">
-  <strong>A <a href="https://www.gatsbyjs.org/">Gatsby</a> starter styled using <a href="https://tailwindcss.com/">Tailwind</a>, a utility-first CSS framework.</strong><br />
-  Uses <a href="https://www.purgecss.com/">Purgecss</a> to remove unused CSS.<br />
+  <strong>A <a href="https://www.gatsbyjs.org/">Gatsby</a> starter styled using <a href="https://tailwindcss.com/">Tailwind v1.8.10</a>, a utility-first CSS framework.</strong><br />
+  Uses <a href="https://www.purgecss.com/">Purgecss</a> to remove unused CSS.<br /> 
+  Futhermore <a href="https://www.gatsbyjs.com/plugins/gatsby-plugin-webpack-bundle-analyser-v2/">webpack-bundle-analyser-v2</a>.
   <br />
   <br />
 </div>
@@ -24,24 +24,18 @@
 
 ## Features
 
-#### Custom Fonts
+<br/>
 
-<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586065286/GitHub%20Screenshots/Gatsby-Custom-Tailwind/gatsby-browser.png" alt="Custom Fonts" style="width:33%">
+### Custom Fonts
 
 You can import your npm packaged fonts via the <code>gatsby-browser.js</code>
 
-<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586066043/GitHub%20Screenshots/Gatsby-Custom-Tailwind/Tailwind.config.png" alt="Tailwind.config.js" style="width:33%">
+Those fonts can be imported via the tailwind.config.js and used globally, e.g. <code>className="font-inter"</code>. You can change the names as you wish.
+<br/>
 
-Those fonts can be imported via the tailwind.config.js and used globally, e.g. <code>className="font-inter"</code> or <code>className="font-body"</code>. You can change the names as you wish. Remember "Spaces" wont be escaped, so use "Open Sans" instead.
-
-#### gatsby-plugin-react-helmet
+### gatsby-plugin-react-helmet
 
 For SEO optimization
-
-#### gatsby-plugin-purgecss
-
-To remove unused CSS styles <br>
-<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586015946/GitHub%20Screenshots/Gatsby-Custom-Tailwind/purgecss.png" alt="purgecss" >
 
 #### Husky + pretty-quick
 
