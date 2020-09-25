@@ -1,12 +1,13 @@
 /*eslint no-template-curly-in-string:0*/
 module.exports = {
   siteMetadata: {
-    title: `Title`,
+    title: `v1.2.4`,
     description: `description`,
     author: `@mozart409`,
     siteUrl: `https://www.gct.mozart409.space/`,
   },
   plugins: [
+    `gatsby-plugin-webpack-bundle-analyser-v2`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -21,13 +22,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        tailwind: true,
-        purgeOnly: [`src/css/style.css`],
-      },
-    },
     `gatsby-plugin-offline`,
   ],
 };
